@@ -1,0 +1,46 @@
+{
+  "checkedAtUTC": "2026-10-25T16:54:52.061350+00:00",
+  "version": "2.0.0-rc.1",
+  "checks": [
+    {
+      "path": "profiles/THEO_PROFILE.md",
+      "url": "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/profiles/THEO_PROFILE.md",
+      "httpStatus": 200,
+      "sha256": "742753c50adab40feea5ae755b57a4ab70896582351b622fa8e747430eb1c9b5",
+      "matchesLocal": true,
+      "request": "plain HTTPS GET; no explicit Authorization header or credentials"
+    },
+    {
+      "path": "profiles/GRAF_PROFILE.md",
+      "url": "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/profiles/GRAF_PROFILE.md",
+      "httpStatus": 200,
+      "sha256": "d1a0e50470f3428f48a945525bec02e594080385072e85ae2e370e4e6e7e7feb",
+      "matchesLocal": true,
+      "request": "plain HTTPS GET; no explicit Authorization header or credentials"
+    },
+    {
+      "path": "profiles/NIKA_PROFILE.md",
+      "url": "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/profiles/NIKA_PROFILE.md",
+      "httpStatus": 200,
+      "sha256": "9022219494eca7946a071f8784f331ea1b6a0a4a830b63caaed2454952e00782",
+      "matchesLocal": true,
+      "request": "plain HTTPS GET; no explicit Authorization header or credentials"
+    },
+    {
+      "path": "products/math/PROMPT.txt",
+      "url": "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/products/math/PROMPT.txt",
+      "httpStatus": 200,
+      "sha256": "d17341e57b255dd608baf4a1c62dd118ff0ed6342801c5ad6781fc33a9e0c891",
+      "matchesLocal": true,
+      "request": "plain HTTPS GET; no explicit Authorization header or credentials"
+    },
+    {
+      "path": "products/english/PROMPT.txt",
+      "url": "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/products/english/PROMPT.txt",
+      "httpStatus": 200,
+      "sha256": "395d30c316cd4d7865edc32f46c618e205d78b58b44d1a48ed9f75337d2ee036",
+      "matchesLocal": true,
+      "request": "plain HTTPS GET; no explicit Authorization header or credentials"
+    }
+  ]
+}
