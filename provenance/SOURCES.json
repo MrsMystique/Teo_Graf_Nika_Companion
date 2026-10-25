@@ -1,0 +1,118 @@
+{
+  "captured": "2026-10-25",
+  "newVersion": "2.0.0-rc.1",
+  "authorAuthorization": "User requested copying companion products and necessary DNA into this public repository and upgrading both products; no book chapters copied.",
+  "copied": [
+    {
+      "sourcePath": "production/approved/THEO_COMPANION_APPROVED_v1.md",
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "9a0fdb06baaa818a957e05b55ded6691befd6191",
+      "destination": "originals/THEO_COMPANION_APPROVED_v1.md",
+      "sha256": "8d1f19862c74f609ea26c28679eccf55e0254d84f4db434fb1184abf8f01e34b",
+      "copyMode": "byte-identical",
+      "status": "approved source; upgrade does not retroactively change original"
+    },
+    {
+      "sourcePath": "07_PRODUCTION/NIKA_COMPANION_RELEASE_CANDIDATE_v1.md",
+      "repository": "MrsMystique/GPT_English",
+      "revision": "51ad5419e8f9007cfa172d5c7d53bff50a7a6bfa",
+      "destination": "originals/NIKA_COMPANION_RELEASE_CANDIDATE_v1.md",
+      "sha256": "e6d81481cec9cc5efb69d766c7d9a1481827761531cf95f76ef2361117b5ce61",
+      "copyMode": "byte-identical",
+      "status": "candidate; no separate final approval found"
+    },
+    {
+      "sourcePath": "characters/THEO_DNA.md",
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "9a0fdb06baaa818a957e05b55ded6691befd6191",
+      "destination": "originals/THEO_DNA_SOURCE_2026-10-25.md",
+      "sha256": "fd859795b27ed156aef74fbb7e998c5b0d177001481ac2fd8ef7daf8c86feb9f",
+      "copyMode": "byte-identical",
+      "status": "literary canon snapshot; not executable tutor instructions"
+    },
+    {
+      "sourcePath": "characters/GRAPH_G07_DNA.md",
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "9a0fdb06baaa818a957e05b55ded6691befd6191",
+      "destination": "originals/GRAF_DNA_SOURCE_2026-10-25.md",
+      "sha256": "2e5e63a28dc40b2159da1a1128d1c60bf033906d60916416056f277af6cc6ec1",
+      "copyMode": "byte-identical",
+      "status": "literary canon snapshot; not executable tutor instructions"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "51ad5419e8f9007cfa172d5c7d53bff50a7a6bfa",
+      "sourcePath": "00_PROJECT_BIBLE/CHARACTER_BIBLE.md",
+      "sourceSha256": "858a54f23994ddcf7c9d68e03f7eaab2dda5987c6005227251a5c69d685f6b4a",
+      "destination": "originals/NIKA_CHARACTER_SOURCE_EXCERPT.md",
+      "sha256": "2d6534f8a80b820dd9386e81b2cdec176831c0d8b0b6d93b938b068476e2a0fe",
+      "copyMode": "exact Nika section only; not the complete file",
+      "status": "literary source excerpt; profiles are teaching adaptations"
+    }
+  ],
+  "additionalInputs": [
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "51ad5419e8f9007cfa172d5c7d53bff50a7a6bfa",
+      "path": "00_PROJECT_BIBLE/LANGUAGE_PEDAGOGY_BIBLE.md",
+      "sha256": "9881d5c6101aa829991892d225aa34e28bd8f0aeda1006a18bf68ea4170a7c0d",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "51ad5419e8f9007cfa172d5c7d53bff50a7a6bfa",
+      "path": "00_PROJECT_BIBLE/MASTER_EDITORIAL_SPEC.md",
+      "sha256": "d62abc6f73d50de4170f5da7e77fa9168e85cdf4becc95ce8846ac7912aa9119",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "51ad5419e8f9007cfa172d5c7d53bff50a7a6bfa",
+      "path": "skills/storytelling-engine/SKILL.md",
+      "sha256": "96dc18006289a72d615ce74fd9d31e2925f0cd1913d25602d2d612e3a0993274",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "51ad5419e8f9007cfa172d5c7d53bff50a7a6bfa",
+      "path": "07_PRODUCTION/NIKA_ACCESS_MEMORY_PLAYBOOK_v1.md",
+      "sha256": "7540ceea7a92655dccbeccd567fffbff3c165b37d461b87dc7fe2b6af16f8f36",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "51ad5419e8f9007cfa172d5c7d53bff50a7a6bfa",
+      "path": "07_PRODUCTION/NIKA_COMPANION_KIT_MASTER_v0.1.md",
+      "sha256": "8656f45709fddbed81ff896c7c3bd34502fbf93a69ee26ba894cff23ef3e6cf1",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "9a0fdb06baaa818a957e05b55ded6691befd6191",
+      "path": "characters/RELATIONSHIP_BIBLE.md",
+      "sha256": "d596636871877389b7906392eaf4f0b39334c3c15c07aec5f1f859db83d39b4f",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "9a0fdb06baaa818a957e05b55ded6691befd6191",
+      "path": "skills/math-book-master/SKILL.md",
+      "sha256": "3bb1a905b690befc83624772008d98c52b45235fea31136e0192f97c1b20cc39",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "9a0fdb06baaa818a957e05b55ded6691befd6191",
+      "path": "production/companion/THEO_PUBLIC_VOICE_PROFILE_CANDIDATE.md",
+      "sha256": "1562549a736f91004b7fcd4b2c83b67b7f916dc7abc59fd6eeb087eebbe7387f",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "9a0fdb06baaa818a957e05b55ded6691befd6191",
+      "path": "skills/mega/teo-graf-dialogue-engine/references/voice-bible.md",
+      "sha256": "1ec38edcbbb5dc12668ec03e485c2df8365ddeebf8c8d8ab002085e65cbc22a9",
+      "use": "task-relevant pedagogical / character mechanisms extracted; not reproduced as a whole"
+    }
+  ]
+}
