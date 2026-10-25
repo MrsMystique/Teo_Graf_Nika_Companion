@@ -1,0 +1,30 @@
+[
+  {
+    "sourceRepository": "MrsMystique/Site_education",
+    "sourcePath": "ART_LIBRARY/00_INBOX/Ника_ рок-компаньон по английскому.png",
+    "destination": "books/assets/nika-cover.png",
+    "sha256": "de9e300146222e893745d254d805549752a518e146ce4b1d91f9b7ad42da7d10",
+    "role": "provided companion artwork, reused unchanged for author review"
+  },
+  {
+    "sourceRepository": "MrsMystique/Site_education",
+    "sourcePath": "ART_LIBRARY/00_INBOX/Спасибо, что ты здесь (1).png",
+    "destination": "books/assets/nika-finish.png",
+    "sha256": "fa40937c28a77d21d253e5814852f70bd7d10cb7358e1122edae8b0a6447bcf4",
+    "role": "provided companion artwork, reused unchanged for author review"
+  },
+  {
+    "sourceRepository": "MrsMystique/Site_education",
+    "sourcePath": "ART_LIBRARY/00_INBOX/Тео и механический спутник_тутульник_компаньон.png",
+    "destination": "books/assets/theo-cover.png",
+    "sha256": "cc701b4eaa05ad7c6fc13666f5e22d28b34ba86d56a3fbe66847aef8730115db",
+    "role": "provided companion artwork, reused unchanged for author review"
+  },
+  {
+    "sourceRepository": "MrsMystique/Site_education",
+    "sourcePath": "ART_LIBRARY/00_INBOX/Заразительная гениальность в мастерской финальный слайд компаньона (1).png",
+    "destination": "books/assets/theo-finish.png",
+    "sha256": "3af13d5d4f315601076007181d4a1c4f85d488655f74fce206f7f7b3b613aafd",
+    "role": "provided companion artwork, reused unchanged for author review"
+  }
+]

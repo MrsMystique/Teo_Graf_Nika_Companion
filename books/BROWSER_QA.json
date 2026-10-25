@@ -1,0 +1,57 @@
+{
+  "mode": "Chromium, local HTTP static files only; external network blocked; file:// restricted by execution environment",
+  "date": "2026-10-25",
+  "checks": [
+    {
+      "product": "english",
+      "width": 1440,
+      "offlineImages": true,
+      "offlineFonts": true,
+      "noOverflow": true,
+      "exactPrompt": true,
+      "clipboard": true,
+      "download": true,
+      "keyboardVoiceSwitch": false,
+      "jsErrors": []
+    },
+    {
+      "product": "english",
+      "width": 375,
+      "offlineImages": true,
+      "offlineFonts": true,
+      "noOverflow": true,
+      "exactPrompt": true,
+      "clipboard": true,
+      "download": true,
+      "keyboardVoiceSwitch": false,
+      "jsErrors": []
+    },
+    {
+      "product": "math",
+      "width": 1440,
+      "offlineImages": true,
+      "offlineFonts": true,
+      "noOverflow": true,
+      "exactPrompt": true,
+      "clipboard": true,
+      "download": true,
+      "keyboardVoiceSwitch": true,
+      "jsErrors": []
+    },
+    {
+      "product": "math",
+      "width": 375,
+      "offlineImages": true,
+      "offlineFonts": true,
+      "noOverflow": true,
+      "exactPrompt": true,
+      "clipboard": true,
+      "download": true,
+      "keyboardVoiceSwitch": true,
+      "jsErrors": []
+    }
+  ],
+  "pdfExported": true,
+  "collectionNavigation": true,
+  "clipboardDeniedFallback": true
+}

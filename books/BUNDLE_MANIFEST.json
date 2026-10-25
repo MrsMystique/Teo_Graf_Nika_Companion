@@ -1,0 +1,27 @@
+{
+  "archive": "companion-gift-editions.zip",
+  "bytes": 35685030,
+  "sha256": "827d318cfcf0d42e9a11417433498a4a3f9259f5539fe70dc5f598817d42a4b8",
+  "entries": {
+    "START.html": "e632ab08054709e76d1d4072ae3f4a24c865f63f02ee17cb593f0872e9178ebe",
+    "english.html": "cbd13996f1d895c2f71ad5759164705c994eaf4a6ba249d424b7e4e41d799433",
+    "math.html": "37a4be3ed8f9d2ef6579745f447877318109ea40021a8319c673c943e553c92f",
+    "english-companion.pdf": "0e098a07e2ef9a5caaf5298a52d797d7da579fa538c9fb134cf86a3bfb17bb3a",
+    "math-companion.pdf": "2c98392a61a394144fc401706c9353f072d20664d407d2c60889587db1ac91e2",
+    "README.txt": "f7d60bdc894406a2fd937fbcb80f89da090edb830c05050bc6370168d8194452",
+    "assets/Caveat-latin-cyrillic.woff": "6cb601a22e11cb6d893f2c9258ddbbb1d2e6b25397ccdc075ed7f61db1e8bc54",
+    "assets/Literata-Italic.ttf": "d483dfaeba9cbf4ce71d32a52ee65df82f7e35b15fff8d1011cdb242d1fcd465",
+    "assets/Literata-Regular.ttf": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440",
+    "assets/OFL-Caveat.txt": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b",
+    "assets/OFL-Literata.txt": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e",
+    "assets/book.css": "6af9e74fba4b902062733f7c221a286e9a89176a6f2a80f0bf2f90a469caba63",
+    "assets/book.js": "b2ff2f1687d6d9daf611880df92b91e326b358a97b859a2d2f9477e08f7d9b52",
+    "assets/nika-cover.png": "de9e300146222e893745d254d805549752a518e146ce4b1d91f9b7ad42da7d10",
+    "assets/nika-finish.png": "fa40937c28a77d21d253e5814852f70bd7d10cb7358e1122edae8b0a6447bcf4",
+    "assets/paper.webp": "402458410df1930f30b6a0be35f35fd0137e9a09ae9ed2b698deaafb82ec57fc",
+    "assets/theo-cover.png": "cc701b4eaa05ad7c6fc13666f5e22d28b34ba86d56a3fbe66847aef8730115db",
+    "assets/theo-finish.png": "3af13d5d4f315601076007181d4a1c4f85d488655f74fce206f7f7b3b613aafd",
+    "prompts/english-PROMPT.txt": "395d30c316cd4d7865edc32f46c618e205d78b58b44d1a48ed9f75337d2ee036",
+    "prompts/math-PROMPT.txt": "d17341e57b255dd608baf4a1c62dd118ff0ed6342801c5ad6781fc33a9e0c891"
+  }
+}

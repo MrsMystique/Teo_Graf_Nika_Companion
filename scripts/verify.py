@@ -67,6 +67,37 @@ class Integrity(unittest.TestCase):
         self.assertEqual(Fraction(216,999),Fraction(8,37))
         for x in range(-10,11):self.assertEqual(math.isqrt(x*x),abs(x))
 
+    def test_reader_books_preserve_original_user_sections(self):
+        for subject,name in [('english','NIKA_COMPANION_RELEASE_CANDIDATE_v1.md'),('math','THEO_COMPANION_APPROVED_v1.md')]:
+            original=(ROOT/'originals'/name).read_text()
+            tail=original[original.index('## 2.'):]
+            book=(ROOT/f'books/{subject}-BOOK.md').read_text()
+            for section in re.split(r'(?m)(?=^## [2-6]\.)',tail):
+                if section.strip():self.assertIn(section.strip(),book)
+            page=(ROOT/f'books/{subject}.html').read_text()
+            import html
+            expected=(ROOT/f'products/{subject}/PROMPT.txt').read_text()
+            self.assertIn(html.escape(expected),page)
+            self.assertEqual((ROOT/f'books/prompts/{subject}-PROMPT.txt').read_text(),expected)
+
+    def test_art_masters_are_copied_unchanged(self):
+        for item in json.loads((ROOT/'books/ART_SOURCES.json').read_text()):
+            self.assertEqual(hashlib.sha256((ROOT/item['destination']).read_bytes()).hexdigest(),item['sha256'])
+
+    def test_download_bundle_is_complete_and_integral(self):
+        import zipfile
+        data=json.loads((ROOT/'books/BUNDLE_MANIFEST.json').read_text())
+        archive=ROOT/'books'/data['archive']
+        self.assertEqual(hashlib.sha256(archive.read_bytes()).hexdigest(),data['sha256'])
+        with zipfile.ZipFile(archive) as z:
+            self.assertIsNone(z.testzip())
+            self.assertEqual(set(z.namelist()),set(data['entries']))
+            for name,digest in data['entries'].items():
+                self.assertEqual(hashlib.sha256(z.read(name)).hexdigest(),digest)
+                self.assertEqual(hashlib.sha256((ROOT/'books'/name).read_bytes()).hexdigest(),digest)
+            for subject in ['english','math']:
+                self.assertTrue(z.read(subject+'-companion.pdf').startswith(b'%PDF-'))
+
     def test_private_material_is_not_accidentally_bundled(self):
         banned_names=['.env','THEO_MEMORY.txt','NIKA_MEMORY.txt','AGENTS.md']
         for name in banned_names:self.assertFalse((ROOT/name).exists(),name)
