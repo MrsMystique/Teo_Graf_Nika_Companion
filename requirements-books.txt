@@ -1,1 +1,2 @@
 Markdown==3.9
+pypdf==6.10.0

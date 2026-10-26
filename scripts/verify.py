@@ -80,6 +80,14 @@ class Integrity(unittest.TestCase):
             self.assertIn(html.escape(expected),page)
             self.assertEqual((ROOT/f'books/prompts/{subject}-PROMPT.txt').read_text(),expected)
 
+    def test_pdf_contains_complete_prompt_download_and_attachment(self):
+        from finalize_pdf import check
+        for subject in ['english','math']:
+            report=check(subject)
+            self.assertTrue(report['fullPromptMatchesTXT'])
+            self.assertTrue(report['internalPromptButtonVerified'])
+            self.assertEqual((ROOT/f'books/{subject}-companion.pdf').read_bytes(),(ROOT/f'books/{subject}-companion-2026-10-26.pdf').read_bytes())
+
     def test_art_masters_are_copied_unchanged(self):
         for item in json.loads((ROOT/'books/ART_SOURCES.json').read_text()):
             self.assertEqual(hashlib.sha256((ROOT/item['destination']).read_bytes()).hexdigest(),item['sha256'])

@@ -1,6 +1,6 @@
 {
   "mode": "Chromium, local HTTP static files only; external network blocked; file:// restricted by execution environment",
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "checks": [
     {
       "product": "english",

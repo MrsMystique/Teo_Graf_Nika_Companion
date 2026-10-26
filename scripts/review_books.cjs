@@ -2,6 +2,7 @@
 const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
+const {execFileSync}=require('node:child_process');
 const path = require('node:path');
 const http = require('node:http');
 const root = path.resolve(__dirname, '..');
@@ -60,10 +61,11 @@ const root = path.resolve(__dirname, '..');
   await page.waitForFunction(()=>document.querySelector('.copy-status').textContent.includes('Браузер не разрешил'));
   await page.setViewportSize({width:1440,height:1000});await page.goto(file);await page.evaluate(()=>document.fonts.ready);
   await page.pdf({path:path.join(root,`books/${product}-companion.pdf`),format:'A4',printBackground:true,preferCSSPageSize:true,displayHeaderFooter:true,headerTemplate:'<span></span>',footerTemplate:'<div style="width:100%;text-align:center;font:9px Arial;color:#6e554f">На одном листе · <span class="pageNumber"></span> / <span class="totalPages"></span></div>' });
+  execFileSync('python',[path.join(root,'scripts/finalize_pdf.py'),product],{cwd:root,stdio:'inherit'});
   await page.close();
  }
  const page=await context.newPage();await page.setViewportSize({width:375,height:900});await page.goto(`${base}/START.html`);await page.evaluate(()=>document.fonts.ready);
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.getByRole('link',{name:/Ника/}).click();assert(page.url().endsWith('english.html'));
- fs.writeFileSync(path.join(root,'books/BROWSER_QA.json'),JSON.stringify({mode:'Chromium, local HTTP static files only; external network blocked; file:// restricted by execution environment',date:'2026-10-25',checks:results,pdfExported:true,collectionNavigation:true,clipboardDeniedFallback:true},null,2)+'\n');
+ fs.writeFileSync(path.join(root,'books/BROWSER_QA.json'),JSON.stringify({mode:'Chromium, local HTTP static files only; external network blocked; file:// restricted by execution environment',date:'2026-10-26',checks:results,pdfExported:true,collectionNavigation:true,clipboardDeniedFallback:true},null,2)+'\n');
  await browser.close();await new Promise(resolve=>server.close(resolve));console.log('Self-contained books verified: 4 viewport/product combinations, clipboard, TXT download, keyboard, PDFs.');
 })().catch(e=>{console.error(e);process.exit(1)});

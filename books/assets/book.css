@@ -11,3 +11,5 @@
 @media print{.cover,.book-body,.last-leaf,footer{padding-left:3mm;padding-right:3mm}.cover .hand-note{transform:none}.voice-demo{padding-left:5mm}}
 
 .print-graf,.print-voice-label{display:none}@media print{.print-graf,.print-voice-label{display:block}.print-graf h4,.print-voice-label{font:17pt Caveat,cursive;margin:5mm 0 2mm}}
+
+.quick-access{max-width:1000px;margin:0 auto 35px;padding:45px 40px;border-top:1px solid var(--line);font-size:20px}.quick-access h2{margin:18px 0 24px}.pdf-access-links{display:flex;gap:18px;flex-wrap:wrap;margin:25px 0}.quick-access .small{margin-bottom:0}@media(max-width:700px){.quick-access{padding:35px 22px;font-size:18px}.quick-access h2{font-size:37px}.pdf-access-links .button{font-size:22px}}@media print{.quick-access{padding:8mm 3mm;max-width:none;margin:0 0 8mm;font-size:11.5pt;break-inside:avoid}.quick-access h2{font-size:28pt}.quick-access .button{font-size:15pt;box-shadow:none;transform:none;padding:3mm 4mm}.pdf-access-links{margin:5mm 0;gap:4mm}.quick-access .small{font-size:9pt}}
