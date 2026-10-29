@@ -3,6 +3,7 @@
 from pathlib import Path
 import zipfile,hashlib,json,shutil
 ROOT=Path(__file__).resolve().parents[1];BOOKS=ROOT/'books'
+RELEASE_DATE=(ROOT/'RELEASE_DATE').read_text().strip()
 paths=[BOOKS/'START.html', BOOKS/'english.html', BOOKS/'math.html',BOOKS/'english-companion.pdf',BOOKS/'math-companion.pdf',BOOKS/'README.txt']
 paths+=sorted((BOOKS/'assets').glob('*'))+sorted((BOOKS/'prompts').glob('*.txt'))
 for p in paths:
@@ -17,5 +18,5 @@ with zipfile.ZipFile(out) as bundle:
  manifest={str(p.relative_to(BOOKS)):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
  for name,digest in manifest.items():assert hashlib.sha256(bundle.read(name)).hexdigest()==digest
 (BOOKS/'BUNDLE_MANIFEST.json').write_text(json.dumps({'archive':out.name,'bytes':out.stat().st_size,'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'entries':manifest},ensure_ascii=False,indent=2)+'\n')
-shutil.copyfile(out,BOOKS/'companion-gift-editions-2026-10-26.zip')
+shutil.copyfile(out,BOOKS/f'companion-gift-editions-{RELEASE_DATE}.zip')
 print(f'Bundle: {len(paths)} files; {out.stat().st_size/1048576:.1f} MiB; exact hashes verified.')

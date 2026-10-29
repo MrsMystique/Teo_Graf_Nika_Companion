@@ -1,14 +1,14 @@
 {
   "product": "math",
-  "pages": 15,
-  "promptStartPage": 10,
-  "promptEndPage": 14,
+  "pages": 18,
+  "promptStartPage": 11,
+  "promptEndPage": 17,
   "fullPromptMatchesTXT": true,
   "comparison": "All characters match after removing page-number footers and normalising whitespace; attached TXT matches exact bytes.",
   "attachment": "THEO_GRAF_PROMPT.txt",
-  "attachmentSha256": "d17341e57b255dd608baf4a1c62dd118ff0ed6342801c5ad6781fc33a9e0c891",
+  "attachmentSha256": "39229e04edb78a8137b10951661cbbdd24a0e1df9625d986bf8a67d71d924ef3",
   "publicTXTLinks": [
-    "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/products/math/PROMPT.txt"
+    "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.1.0-rc.1/products/math/PROMPT.txt"
   ],
   "bookmark": "Полный промпт для вставки",
   "internalPromptButtonVerified": true

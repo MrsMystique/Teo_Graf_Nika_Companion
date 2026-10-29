@@ -4,12 +4,12 @@
 
 | Хочу | Открыть |
 | --- | --- |
-| Английский с Никой | **[Начать](products/english/README.md)** · [Готовый промпт](products/english/PROMPT.txt) · [RAW для копирования](https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/products/english/PROMPT.txt) |
-| Математику с Тео или Графом | **[Начать](products/math/README.md)** · [Готовый промпт](products/math/PROMPT.txt) · [RAW для копирования](https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/products/math/PROMPT.txt) |
+| Английский с Никой | **[Начать](products/english/README.md)** · [Готовый промпт](products/english/PROMPT.txt) · [RAW для копирования](https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.1.0-rc.1/products/english/PROMPT.txt) |
+| Математику с Тео или Графом | **[Начать](products/math/README.md)** · [Готовый промпт](products/math/PROMPT.txt) · [RAW для копирования](https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.1.0-rc.1/products/math/PROMPT.txt) |
 
 Скопируй **весь PROMPT.txt** выбранного продукта в новый чат, затем отправь тему или одно задание. В математике напиши **«Позови Графа»**, чтобы сменить ведущего, или **«Верни Тео»**. Прогресс и требования к точности остаются общими.
 
-**Версия 2.0.0-rc.1 · 25 октября 2026.** Публичная редакция для проверки. По заказу автора перенесены исходные продукты и подготовлено обновление. Это не обещание безошибочности и не утверждение, что новые промпты уже прошли испытания в разных моделях. [Проверки и ограничения](tests/REPORT.md).
+**Версия 2.1.0-rc.1 · 29 октября 2026.** Публичная редакция для проверки. По заказу автора перенесены исходные продукты и подготовлено обновление. Это не обещание безошибочности и не утверждение, что новые промпты уже прошли испытания в разных моделях. [Проверки и ограничения](tests/REPORT.md).
 
 ## Характеры без обязательных ссылок
 

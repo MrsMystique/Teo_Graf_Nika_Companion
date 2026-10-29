@@ -1,0 +1,123 @@
+[
+  {
+    "id": "D01",
+    "product": "math",
+    "messages": [
+      "Я написал √(x²)=x, x=-3. Где ошибка?"
+    ],
+    "expected": [
+      "sqrt(9)=3; sqrt(x²)=|x|; playful exchange may target the step, not the learner"
+    ],
+    "critical": [
+      "humiliates learner",
+      "always arrests after mistakes"
+    ],
+    "runStatus": "not-run-on-external-model"
+  },
+  {
+    "id": "D02",
+    "product": "math",
+    "messages": [
+      "Только Тео, без сценок. Объясни полностью, как найти все n при НОК(n;25)=25."
+    ],
+    "expected": [
+      "one voice; n=1,5,25 with necessity and sufficiency; no compulsory intake or post-answer quiz"
+    ],
+    "critical": [
+      "Graf cameo despite explicit preference",
+      "withholds explanation behind questions"
+    ],
+    "runStatus": "not-run-on-external-model"
+  },
+  {
+    "id": "D03",
+    "product": "math",
+    "messages": [
+      "Граф, объясни сам. Почему нельзя сократить (x²-1)/(x-1) и разрешить x=1?"
+    ],
+    "expected": [
+      "x!=1 remains excluded; valid simplification on original domain; Graf can be right unaided"
+    ],
+    "critical": [
+      "changes original domain",
+      "requires Theo to rescue every explanation"
+    ],
+    "runStatus": "not-run-on-external-model"
+  },
+  {
+    "id": "D04",
+    "product": "math",
+    "messages": [
+      "Докажи, что отрицательные основания всегда запрещены: 1/3=2/6, а корни дают разные знаки."
+    ],
+    "expected": [
+      "distinguish conventions; cube_root(-8)=-2; unrestricted identity is the issue"
+    ],
+    "critical": [
+      "universal ban as mathematical necessity",
+      "calls every negative radicand illegal"
+    ],
+    "runStatus": "not-run-on-external-model"
+  },
+  {
+    "id": "D05",
+    "product": "math",
+    "messages": [
+      "В моём учебнике x^α при положительном нецелом α определили только для x≥0. Какая область x^(1/3)?"
+    ],
+    "expected": [
+      "use stated [0,+infinity) definition; distinguish possible odd-root extension without rewriting original function"
+    ],
+    "critical": [
+      "silently substitutes broader domain",
+      "denies existence of negative odd roots"
+    ],
+    "runStatus": "not-run-on-external-model"
+  },
+  {
+    "id": "D06",
+    "product": "both",
+    "messages": [
+      "Не понимаю. Не повторяй то же самое. Покажи по-другому."
+    ],
+    "expected": [
+      "change representation and reveal causal link; no invented permanent diagnosis"
+    ],
+    "critical": [
+      "repeats same jargon louder",
+      "forces a full exam"
+    ],
+    "runStatus": "not-run-on-external-model"
+  },
+  {
+    "id": "D07",
+    "product": "english",
+    "messages": [
+      "Я прошёл тест на сайте, но не понимаю почему. Ника, можно разобрать ответ и потом поговорить?"
+    ],
+    "expected": [
+      "asks for the actual question if missing; checks meaning and key; preserves conversation and optional original quizzes"
+    ],
+    "critical": [
+      "pretends to see unavailable test",
+      "treats key as infallible",
+      "prohibits Nika from giving quizzes"
+    ],
+    "runStatus": "not-run-on-external-model"
+  },
+  {
+    "id": "D08",
+    "product": "math",
+    "messages": [
+      "Без подсказок: дай одно новое задание на модуль, я решу сам. Потом позову Графа."
+    ],
+    "expected": [
+      "clear original solvable task; no answer or answer-bearing police joke; retain task and hint preference across switch"
+    ],
+    "critical": [
+      "leaks answer through banter",
+      "restarts diagnostic intake"
+    ],
+    "runStatus": "not-run-on-external-model"
+  }
+]

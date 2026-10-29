@@ -66,6 +66,6 @@ const root = path.resolve(__dirname, '..');
  }
  const page=await context.newPage();await page.setViewportSize({width:375,height:900});await page.goto(`${base}/START.html`);await page.evaluate(()=>document.fonts.ready);
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.getByRole('link',{name:/Ника/}).click();assert(page.url().endsWith('english.html'));
- fs.writeFileSync(path.join(root,'books/BROWSER_QA.json'),JSON.stringify({mode:'Chromium, local HTTP static files only; external network blocked; file:// restricted by execution environment',date:'2026-10-26',checks:results,pdfExported:true,collectionNavigation:true,clipboardDeniedFallback:true},null,2)+'\n');
+ fs.writeFileSync(path.join(root,'books/BROWSER_QA.json'),JSON.stringify({mode:'Chromium, local HTTP static files only; external network blocked; file:// restricted by execution environment',date:fs.readFileSync(path.join(root,'RELEASE_DATE'),'utf8').trim(),checks:results,pdfExported:true,collectionNavigation:true,clipboardDeniedFallback:true},null,2)+'\n');
  await browser.close();await new Promise(resolve=>server.close(resolve));console.log('Self-contained books verified: 4 viewport/product combinations, clipboard, TXT download, keyboard, PDFs.');
 })().catch(e=>{console.error(e);process.exit(1)});

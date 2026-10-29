@@ -1,14 +1,14 @@
 {
   "product": "english",
-  "pages": 14,
-  "promptStartPage": 9,
-  "promptEndPage": 13,
+  "pages": 15,
+  "promptStartPage": 10,
+  "promptEndPage": 14,
   "fullPromptMatchesTXT": true,
   "comparison": "All characters match after removing page-number footers and normalising whitespace; attached TXT matches exact bytes.",
   "attachment": "NIKA_PROMPT.txt",
-  "attachmentSha256": "395d30c316cd4d7865edc32f46c618e205d78b58b44d1a48ed9f75337d2ee036",
+  "attachmentSha256": "582b0666c2a1728365f87c7139a476d0e87dfe0baabcde67542681b05ae09111",
   "publicTXTLinks": [
-    "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.0.0-rc.1/products/english/PROMPT.txt"
+    "https://raw.githubusercontent.com/MrsMystique/Teo_Graf_Nika_Companion/v2.1.0-rc.1/products/english/PROMPT.txt"
   ],
   "bookmark": "Полный промпт для вставки",
   "internalPromptButtonVerified": true

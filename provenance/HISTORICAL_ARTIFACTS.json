@@ -1,0 +1,16 @@
+{
+  "immutablePreviousEditions": [
+    {
+      "file": "books/companion-gift-editions-2026-10-26.zip",
+      "sha256": "fe2915a0d1d5da546cf22b407ba621a43761611b428c1089f442444a74344c01"
+    },
+    {
+      "file": "books/english-companion-2026-10-26.pdf",
+      "sha256": "9713aabddc51323803cf976a59adc9284159892039f570cbe1f947cac0f6a374"
+    },
+    {
+      "file": "books/math-companion-2026-10-26.pdf",
+      "sha256": "c2d58893d8ed001e70980f9e76b347dd21ff9dd42ff31770a6aa9e14f7d23f17"
+    }
+  ]
+}

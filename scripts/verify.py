@@ -81,12 +81,12 @@ class Integrity(unittest.TestCase):
             self.assertEqual((ROOT/f'books/prompts/{subject}-PROMPT.txt').read_text(),expected)
 
     def test_pdf_contains_complete_prompt_download_and_attachment(self):
-        from finalize_pdf import check
+        from finalize_pdf import check, RELEASE_DATE
         for subject in ['english','math']:
             report=check(subject)
             self.assertTrue(report['fullPromptMatchesTXT'])
             self.assertTrue(report['internalPromptButtonVerified'])
-            self.assertEqual((ROOT/f'books/{subject}-companion.pdf').read_bytes(),(ROOT/f'books/{subject}-companion-2026-10-26.pdf').read_bytes())
+            self.assertEqual((ROOT/f'books/{subject}-companion.pdf').read_bytes(),(ROOT/f'books/{subject}-companion-{RELEASE_DATE}.pdf').read_bytes())
 
     def test_art_masters_are_copied_unchanged(self):
         for item in json.loads((ROOT/'books/ART_SOURCES.json').read_text()):
@@ -105,6 +105,29 @@ class Integrity(unittest.TestCase):
                 self.assertEqual(hashlib.sha256((ROOT/'books'/name).read_bytes()).hexdigest(),digest)
             for subject in ['english','math']:
                 self.assertTrue(z.read(subject+'-companion.pdf').startswith(b'%PDF-'))
+
+    def test_power_and_root_reference_boundaries(self):
+        self.assertEqual((-2)**3, -8)
+        self.assertEqual(2**6, (-8)**2)
+        self.assertEqual(Fraction(1,3),Fraction(2,6))
+        for x in range(-20,21): self.assertEqual(math.isqrt(x*x),abs(x))
+        self.assertEqual([x for x in range(-10,11) if abs(x-2)==3],[-1,5])
+
+    def test_previous_dated_editions_are_not_overwritten(self):
+        for entry in json.loads((ROOT/'provenance/HISTORICAL_ARTIFACTS.json').read_text())['immutablePreviousEditions']:
+            self.assertEqual(hashlib.sha256((ROOT/entry['file']).read_bytes()).hexdigest(),entry['sha256'])
+
+    def test_new_behaviour_cases_and_pdf_version_links(self):
+        cases=json.loads((ROOT/'tests/cases_v2_1.json').read_text())
+        self.assertEqual(len(cases),8)
+        self.assertEqual(len({case['id'] for case in cases}),8)
+        for case in cases:
+            self.assertTrue(case['messages'] and case['expected'] and case['critical'])
+            self.assertEqual(case['runStatus'],'not-run-on-external-model')
+        from finalize_pdf import check
+        for subject in ['math','english']:
+            for url in check(subject)['publicTXTLinks']:
+                self.assertIn('/v'+build.VERSION+'/',url)
 
     def test_private_material_is_not_accidentally_bundled(self):
         banned_names=['.env','THEO_MEMORY.txt','NIKA_MEMORY.txt','AGENTS.md']

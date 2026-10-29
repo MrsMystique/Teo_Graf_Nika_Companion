@@ -5,6 +5,7 @@ import sys,re,hashlib,json,shutil
 from pypdf import PdfReader,PdfWriter
 from pypdf.generic import NameObject,DictionaryObject,ArrayObject
 ROOT=Path(__file__).resolve().parents[1]
+RELEASE_DATE=(ROOT/'RELEASE_DATE').read_text().strip()
 
 def normalized(text):return re.sub(r'\s+','',text)
 def check(subject):
@@ -34,7 +35,7 @@ def finalize(subject):
     if name in r.attachments:
         result=check(subject)
         (ROOT/f'books/{subject}-PDF_CHECK.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-        shutil.copyfile(file,ROOT/f'books/{subject}-companion-2026-10-26.pdf')
+        shutil.copyfile(file,ROOT/f'books/{subject}-companion-{RELEASE_DATE}.pdf')
         print(subject,'already finalized; full prompt and attachment verified')
         return
     w=PdfWriter(clone_from=r)
@@ -53,7 +54,7 @@ def finalize(subject):
     temp.replace(file)
     result=check(subject)
     (ROOT/f'books/{subject}-PDF_CHECK.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-    shutil.copyfile(file,ROOT/f'books/{subject}-companion-2026-10-26.pdf')
+    shutil.copyfile(file,ROOT/f'books/{subject}-companion-{RELEASE_DATE}.pdf')
     print(subject, 'complete prompt:',result['promptStartPage'],'–',result['promptEndPage'],'; exact TXT attached; public download and bookmark verified')
 if __name__=='__main__':
     for subject in sys.argv[1:] or ['english','math']:finalize(subject)

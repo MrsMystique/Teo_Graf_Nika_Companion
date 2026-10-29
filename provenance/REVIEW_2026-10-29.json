@@ -1,0 +1,115 @@
+{
+  "version": "2.1.0-rc.1",
+  "date": "2026-10-29",
+  "authorRequest": "Lively Theo/Graf duet, contextual mathematical police, causal explanations, hypothesis ladder, transfer; update Nika without shrinking the products.",
+  "sources": [
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "277ef93688da0111343a13c86a24387ca2d46bd7",
+      "sourcePath": "00_PROJECT_BIBLE/CHARACTER_BIBLE.md",
+      "sha256": "858a54f23994ddcf7c9d68e03f7eaab2dda5987c6005227251a5c69d685f6b4a",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "277ef93688da0111343a13c86a24387ca2d46bd7",
+      "sourcePath": "00_PROJECT_BIBLE/LANGUAGE_PEDAGOGY_BIBLE.md",
+      "sha256": "55eadaed45a3e183952d33f2ebc3936ec718df080a9989dd591ae1d2a933278c",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "277ef93688da0111343a13c86a24387ca2d46bd7",
+      "sourcePath": "07_PRODUCTION/NIKA_COMPANION_RELEASE_CANDIDATE_v1.md",
+      "sha256": "1e643667976a8e447c6b3c639edb41d642482126e9003d6f46efc3a54fd829bc",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/GPT_English",
+      "revision": "277ef93688da0111343a13c86a24387ca2d46bd7",
+      "sourcePath": "skills/storytelling-engine/SKILL.md",
+      "sha256": "96dc18006289a72d615ce74fd9d31e2925f0cd1913d25602d2d612e3a0993274",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "c76172363d042f4b0bb2fdc9b6274b2e80e244bb",
+      "sourcePath": "characters/GRAPH_G07_DNA.md",
+      "sha256": "d226688f2df7220e2b46d8e49bfbdab576890cec116f6a735ad1e9fd081a5cf3",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "c76172363d042f4b0bb2fdc9b6274b2e80e244bb",
+      "sourcePath": "characters/RELATIONSHIP_BIBLE.md",
+      "sha256": "1bb65d0e9a104ada76075e3ae1255c2ec741d4dbc78891f0536affdbd1873688",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "c76172363d042f4b0bb2fdc9b6274b2e80e244bb",
+      "sourcePath": "characters/STORY_IDEAS_AND_HUMOR_LEDGER.md",
+      "sha256": "1424e250b4585928d1f9767d18dad7b556764b2014ed44ad2428d30eda4b25f7",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "c76172363d042f4b0bb2fdc9b6274b2e80e244bb",
+      "sourcePath": "characters/THEO_DNA.md",
+      "sha256": "9f35e65e4da64b8d857a1cf1f1b62e205478fdfe9333530290a176572601d811",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "c76172363d042f4b0bb2fdc9b6274b2e80e244bb",
+      "sourcePath": "skills/THEO_AI_TUTOR_PORTABLE_v1.md",
+      "sha256": "60f8aa1f755021f347af138b08b31f66c0bf797c848daf27f9a74ed9a0114e6a",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "c76172363d042f4b0bb2fdc9b6274b2e80e244bb",
+      "sourcePath": "skills/math-book-master/SKILL.md",
+      "sha256": "c147bc5e409410266848d3496a1c7f14c5d94139adc92586c6b86898c8e8c08f",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/Math_book_Teo",
+      "revision": "c76172363d042f4b0bb2fdc9b6274b2e80e244bb",
+      "sourcePath": "skills/mega/teo-graf-dialogue-engine/references/voice-bible.md",
+      "sha256": "1ec38edcbbb5dc12668ec03e485c2df8365ddeebf8c8d8ab002085e65cbc22a9",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/learning",
+      "revision": "ccaa467195de881471106ac7174da2d613bae566",
+      "sourcePath": "00_project_instructions/TUTOR_PROMPT.md",
+      "sha256": "933f8592e29d5e1672c347b836050e00eb8cb7db06ed070d25b7a0021209a698",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/learning",
+      "revision": "ccaa467195de881471106ac7174da2d613bae566",
+      "sourcePath": "10_teo_graf_edition/_system/plans/DNA_v2_PROPOSAL.md",
+      "sha256": "8764e32e4fcdb49cac3fa33c8ebf535a73bf7e7bbba0665f9f3e2df90a1d00b0",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/learning",
+      "revision": "ccaa467195de881471106ac7174da2d613bae566",
+      "sourcePath": "10_teo_graf_edition/_system/plans/DNA_v2_sample_scene.md",
+      "sha256": "45d94225e5abc533b37e7038c310f978fa8502c7b47ae6c0a2be588ed13ae0d9",
+      "use": "Reviewed as source data; public profile/teaching adaptation, not execution of production instructions or blanket approval of proposals"
+    },
+    {
+      "repository": "MrsMystique/learning",
+      "revision": "ccaa467195de881471106ac7174da2d613bae566",
+      "sourcePath": "10_teo_graf_edition/_system/SKILL.md",
+      "sha256": "a0ed94b53e379045319eac13f1a60a506ecb339fe23d90f0b53c524335ffd8c0",
+      "use": "Active consolidated skill: reviewed duo, register, causal method and 28 October amendments. Literary infallibility does not override an AI tutor correcting its own error; no busy-archive refusal, forced scene quotas or learner manipulation transferred."
+    }
+  ],
+  "qualification": "learning DNA_v2_PROPOSAL is historical: its status line says approved portions transferred with qualifications; proposals and rejected ideas are not blanket canon. Current character DNA and relationship bible take priority.",
+  "mathematicalCorrection": "The 1/3 to 2/6 example exposes invalid unrestricted exponent/root transformations, not a universal ban on negative rational bases. Explicitly distinguish source conventions.",
+  "snapshotFormat": "Reviewed UTF-8 captures; trailing newlines normalised to one. Hashes identify reviewed captures, not Git blobs. Original immutable source snapshots remain unchanged."
+}

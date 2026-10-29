@@ -1,13 +1,13 @@
 {
   "archive": "companion-gift-editions.zip",
-  "bytes": 35791616,
-  "sha256": "fe2915a0d1d5da546cf22b407ba621a43761611b428c1089f442444a74344c01",
+  "bytes": 35849170,
+  "sha256": "0dac1aac368437e62f07b8454b6e2e6bedc73300a111ee5994fd22a867036ffc",
   "entries": {
     "START.html": "e632ab08054709e76d1d4072ae3f4a24c865f63f02ee17cb593f0872e9178ebe",
-    "english.html": "514b5a927e3127325644dd020ebfbd4dc3e0ac1049f762077df7084b93a04729",
-    "math.html": "d495ea55d60dcaa61e528d79b08107c739a5d7e9d688c1825d00231bbe9ace25",
-    "english-companion.pdf": "9713aabddc51323803cf976a59adc9284159892039f570cbe1f947cac0f6a374",
-    "math-companion.pdf": "c2d58893d8ed001e70980f9e76b347dd21ff9dd42ff31770a6aa9e14f7d23f17",
+    "english.html": "1dbde83c1b6bab3543dd0f6d592c4bbb30aab59e43431ec922bca9828529c195",
+    "math.html": "d8e6908140cadf656d47b8e94413bfec08aa06e376447b153291f8b235981971",
+    "english-companion.pdf": "c68bed4c33c4cda8a39de2c1283f5028e26a666ed7373d08407ddcd1a213018e",
+    "math-companion.pdf": "b1e47c521bff5cf8b8687b58f88a23bc2904efc8a8989fe009da42a01d339656",
     "README.txt": "9194e244c709f495615def6a166e9b49281185e3ddecbfb0cf01a9e0da7fa901",
     "assets/Caveat-latin-cyrillic.woff": "6cb601a22e11cb6d893f2c9258ddbbb1d2e6b25397ccdc075ed7f61db1e8bc54",
     "assets/Literata-Italic.ttf": "d483dfaeba9cbf4ce71d32a52ee65df82f7e35b15fff8d1011cdb242d1fcd465",
@@ -21,7 +21,7 @@
     "assets/paper.webp": "402458410df1930f30b6a0be35f35fd0137e9a09ae9ed2b698deaafb82ec57fc",
     "assets/theo-cover.png": "cc701b4eaa05ad7c6fc13666f5e22d28b34ba86d56a3fbe66847aef8730115db",
     "assets/theo-finish.png": "3af13d5d4f315601076007181d4a1c4f85d488655f74fce206f7f7b3b613aafd",
-    "prompts/english-PROMPT.txt": "395d30c316cd4d7865edc32f46c618e205d78b58b44d1a48ed9f75337d2ee036",
-    "prompts/math-PROMPT.txt": "d17341e57b255dd608baf4a1c62dd118ff0ed6342801c5ad6781fc33a9e0c891"
+    "prompts/english-PROMPT.txt": "582b0666c2a1728365f87c7139a476d0e87dfe0baabcde67542681b05ae09111",
+    "prompts/math-PROMPT.txt": "39229e04edb78a8137b10951661cbbdd24a0e1df9625d986bf8a67d71d924ef3"
   }
 }
